@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Rectangles</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #map {
+            height: 100%;
+        }
+    </style>
+    <script src="ppp.js"></script>
+
+</head>
+<body>
+    <div id="floating-panel">
+        <input onclick="removeLine();" type=button value="Remove line">
+        <input onclick="addLine();" type=button value="Restore line">
+    </div>
+    <div id="map"></div>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr-uolFVv4R8ou9pB_48yFz3Jre-jSjSk&callback=initMap"></script>
+
+</body>
+</html>
